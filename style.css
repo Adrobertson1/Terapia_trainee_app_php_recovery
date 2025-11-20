@@ -1,0 +1,168 @@
+/* General layout */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.dashboard-wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+  background-color: #fff;
+}
+
+/* Sidebar */
+.sidebar-banner {
+  width: 250px;
+  background-color: #fafafa;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+}
+
+.sidebar-banner h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #6a1b9a;
+}
+
+.menu-section a,
+.sidebar-section a {
+  display: block;
+  margin-bottom: 10px;
+  color: #6a1b9a; /* Terapia dark purple */
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.menu-section a:hover,
+.sidebar-section a:hover {
+  color: #4a148c; /* Slightly deeper purple on hover */
+}
+
+.sidebar-section {
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.sidebar-section h4 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #6a1b9a;
+}
+
+/* Forms */
+form input,
+form select,
+form button {
+  font-size: 14px;
+}
+
+.report-filter-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+
+.report-filter-form .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.report-filter-form input,
+.report-filter-form select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.report-filter-form button,
+.report-filter-form .btn-reset {
+  padding: 8px 14px;
+  border-radius: 4px;
+  background-color: #6a1b9a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Tables */
+.report-table,
+.course-summary-table,
+.trainee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.report-table th,
+.course-summary-table th,
+.trainee-table th {
+  background-color: #6a1b9a;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+.report-table td,
+.course-summary-table td,
+.trainee-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Buttons */
+.btn-sm {
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-view {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn-edit {
+  background-color: #6a1b9a;
+  color: white;
+}
+
+.btn-archive {
+  background-color: #d32f2f;
+  color: white;
+}
+
+/* Misc */
+.no-results {
+  margin-top: 20px;
+  font-style: italic;
+  color: #777;
+}
+
+.error-list {
+  background-color: #ffe0e0;
+  color: #b71c1c;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
