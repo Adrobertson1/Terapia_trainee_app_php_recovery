@@ -1,0 +1,1 @@
+logAction($pdo, $_SESSION['user_id'], $_SESSION['role'], 'upload_portfolio', "Uploaded portfolio item: $title");
